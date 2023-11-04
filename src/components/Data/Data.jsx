@@ -7,7 +7,7 @@ function Data() {
 
   const fetchData = async () => {
     try {
-      let response = await axios.get(`http://localhost:5555/api`);
+      let response = await axios.get(`https://kind-pink-rabbit-sock.cyclic.app/api`);
       console.log("Response from API:", response.data);
       setData(response.data);
     } catch (error) {
